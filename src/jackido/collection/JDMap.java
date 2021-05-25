@@ -1,8 +1,8 @@
-package Jackido.collection;
+package jackido.collection;
 
 import java.util.*;
 
-public class JMap {
+public class JDMap {
     // adapted from https://stackoverflow.com/questions/59136811/how-to-sort-a-hashmap-if-both-have-same-key
     public static LinkedHashMap sortByValues(HashMap map, boolean sortMode) {
         List list = new LinkedList(map.entrySet());

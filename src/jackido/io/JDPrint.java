@@ -1,6 +1,6 @@
-package Jackido.io;
+package jackido.io;
 
-public class JPrint {
+public class JDPrint {
     public static void printNS(int n, String s) {
         for (int i = 0; i < n; i++) {
             System.out.print(s);

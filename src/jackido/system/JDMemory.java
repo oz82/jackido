@@ -1,8 +1,8 @@
-package Jackido.system;
+package jackido.system;
 
 import java.text.NumberFormat;
 
-public class JMemory {
+public class JDMemory {
     public static void getMemoryInfo(String message) {
         System.out.println(message);
         Runtime runtime = Runtime.getRuntime();

@@ -1,10 +1,10 @@
-package Jackido.io;
+package jackido.io;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
-public class JFile {
+public class JDFile {
     // adapted from https://stackoverflow.com/questions/453018/number-of-lines-in-a-file-in-java/453067
     public static int countLines(String filename) throws IOException {
         InputStream is = new BufferedInputStream(new FileInputStream(filename));

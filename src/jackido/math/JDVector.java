@@ -1,6 +1,6 @@
-package Jackido.math;
+package jackido.math;
 
-public class JVector {
+public class JDVector {
     public static double getCosineSimilarity(double[] v1, double[] v2) {
         if (v1 == null || v2 == null || v1.length != v2.length || v1.length == 0) return 0.0;
         double sum1 = 0.0, sum2 = 0.0, sum3 = 0.0;

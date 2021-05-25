@@ -1,8 +1,8 @@
-package Jackido.math;
+package jackido.math;
 
 import java.util.ArrayList;
 
-public class JStatistics {
+public class JDStatistics {
     public static double mean(ArrayList<Double> list) {
         double sum = 0.0;
         for (double d : list) {
