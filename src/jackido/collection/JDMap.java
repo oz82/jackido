@@ -71,6 +71,34 @@ public class JDMap {
         }
     }
 
+    public static void addToSet(HashMap<String, HashSet<String>> map, String s1, String s2) {
+        HashSet<String> set = map.get(s1);
+        if (set == null) {
+            set = new HashSet<>();
+        }
+        set.add(s2);
+        map.put(s1, set);
+    }
+
+    public static long sum(HashMap<String, Integer> map) {
+        Set keySet = map.keySet();
+        Iterator iter = keySet.iterator();
+        int result = 0;
+        while (iter.hasNext()) {
+            String key = (String) iter.next();
+            result += map.get(key);
+        }
+        return result;
+    }
+
+    public static void addDouble(HashMap<String, Double> map, String s, double d) {
+        Double temp = map.get(s);
+        if (temp == null) {
+            temp = 0.0;
+        }
+        map.put(s, temp + d);
+    }
+
     public static Exception add(HashMap<String, Integer> map, String s) {
         try {
             Integer freq = map.get(s);
