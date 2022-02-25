@@ -83,7 +83,7 @@ public class JDMap {
     public static long sum(HashMap<String, Integer> map) {
         Set keySet = map.keySet();
         Iterator iter = keySet.iterator();
-        int result = 0;
+        long result = 0;
         while (iter.hasNext()) {
             String key = (String) iter.next();
             result += map.get(key);
