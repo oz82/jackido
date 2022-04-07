@@ -71,13 +71,19 @@ public class JDMap {
         }
     }
 
-    public static void addToSet(HashMap<String, HashSet<String>> map, String s1, String s2) {
-        HashSet<String> set = map.get(s1);
-        if (set == null) {
-            set = new HashSet<>();
+    public static void add2(HashMap<String, HashMap<String, Integer>> map, String s1, String s2) {
+        HashMap<String, Integer> innerMap = map.get(s1);
+        if (innerMap == null) {
+            innerMap = new HashMap<>();
+            innerMap.put(s2, 1);
+        } else {
+            Integer freq;
+            freq = innerMap.get(s2);
+            if (freq == null)
+                freq = 0;
+            innerMap.put(s2, ++freq);
         }
-        set.add(s2);
-        map.put(s1, set);
+        map.put(s1, innerMap);
     }
 
     public static long sum(HashMap<String, Integer> map) {
